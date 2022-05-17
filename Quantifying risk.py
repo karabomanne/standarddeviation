@@ -13,8 +13,8 @@ epr = [0.05, 0.25] #Estimated probable return
 
 import numpy as np
 
-std = np.sqrt(erB-erA**2)
-print ("the standard deviation of the annual return is {}%". format(std))
+std = np.sqrt(erB-erA**2) * 100
+print ("the standard deviation of the annual return is {:0.2f}%". format(std))
 
 import matplotlib.pyplot as plt
 ep = list(range(2))
